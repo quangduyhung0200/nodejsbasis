@@ -26,3 +26,19 @@
        background-color: #04AA6D;
        color: white;
    }
+
+   .create-user-container {
+
+       text-align: center;
+
+   }
+
+   .create-user-container label {
+       display: block;
+
+   }
+
+   .create-user-container .btn-submid {
+       margin-top: 15px;
+       cursor: pointer;
+   }
