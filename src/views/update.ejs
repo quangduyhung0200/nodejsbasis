@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>update user</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+    <div class="update-user-a">
+        <form action="/update-user" method="POST">
+            <div>
+                <label>frist name</label>
+                <input type="text" name="fistname" value="<%= dataUser.fistName %>">
+            </div>
+            <div>
+                <label>last name</label>
+                <input type="text" name="lastname" value="<%= dataUser.lastName %>">
+            </div>
+            <div>
+                <label>email name</label>
+                <input type="email" name="email" value="<%= dataUser.email %>">
+            </div>
+            <div>
+                <label>address</label>
+                <input type="text" name="address" value="<%= dataUser.address %>">
+            </div>
+
+
+            <input type="text" value="<%= dataUser.id %>" hidden name="id">
+            <div>
+                <button type="submit" class="btn-save">
+                    save
+
+                </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
